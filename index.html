@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Baker Street INQUIRER</title>
+	<style type="text/css">
+		body {
+			font-family: Georgia, serif;
+			color: #666;
+			background: url("images/bg.png") repeat;
+			margin: 0;
+			padding: 0;
+		}
+		#rag {
+			background: url("images/rag.png") repeat-x;
+			height: 34px;
+			width: 100%;
+		}
+		h1 {
+			font-size: 30;
+			font-weight: normal;
+			text-align: center;
+		}
+		#head-styler {
+			margin: 30px 0;
+			border-top: 1px solid #666;
+			height: 20px;
+			display: block;
+		} 
+		#head-text-align {
+			text-align: center;
+			margin-top: -10px;
+		}
+		#head-bg {
+			background: #ebebeb;
+			padding: 5px 20px;;
+		}
+		img {
+			border: 0;
+			margin: 0;
+			padding: 0;
+		}
+		#container {
+			max-width: 1300px;
+			margin: 0 auto;
+		}
+		#container-right-bottom {
+			float: right;
+			width: 75%;
+		/*	background: #ccc;*/
+		}
+		#logo-pos {
+			display: block;
+			margin-top: 115px;
+			margin-left: 60px;
+		}
+		#logo-bg {
+			background: url("images/logo-bg.png") no-repeat;
+			height: 284px;
+			width: 279px;
+			float: left;
+		}
+		ul {
+			padding: 0;
+		}
+		li {
+			font-size: 18px;
+			font-weight: bold;
+			color: #930b0b;
+			text-transform: uppercase;
+			text-align: center;
+			text-decoration: none;
+			list-style: none;
+			display: inline-block;
+			border-bottom: 1px solid #a4a09c;
+			padding-bottom: 30px;
+		}
+		#nav-styler {
+			float: right;
+			width: 75%;
+		}
+		a, a:hover, a:active, a:visited {
+			color: #930b0b;
+			text-decoration: none;
+		}
+		#li-layout-one {
+			padding-right: 100px;
+			padding-left: 100px;
+			margin-right: 32px;
+		}
+		#li-layout-two {
+			padding-right: 100px;
+			padding-left: 100px;
+			margin-right: 32px;
+		}
+		#li-layout-three {
+			padding-left: 100px;
+			padding-right: 100px;
+		}
+		.image-copy {
+			text-transform: uppercase;
+			color: #930b0b;
+			text-align: center;
+		}
+		.smaller-text {
+			font-size: 12px;
+			display: block;
+		}
+		.image-tn {
+			display: inline-block;
+			margin: 0 17px;
+		}
+		.image-tn:first-child {
+			margin: 0 10px 0 0;
+		}	
+		.image-tn:last-child {
+			margin: 0 0 0 10px;
+		}	
+		.image-tn img {
+			display: inline-block;
+			-webkit-border-radius: 15px;
+			-moz-border-radius: 15px;
+			border-radius: 15px;
+			-webkit-box-shadow: 0px 2px 13px -2px rgba(0,0,0,0.51);
+			-moz-box-shadow: 0px 2px 13px -2px rgba(0,0,0,0.51);
+			box-shadow: 0px 2px 13px -2px rgba(0,0,0,0.51);
+		}
+		.image-resizer {
+			zoom: 40%;
+		}
+		#footer-copy {
+			width: 40%;
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		@media (min-width: 400px) and (max-width: 1299px) {
+			body {
+				background: #ccc;
+			}
+			li {
+				display: block;
+			}
+			#nav-styler {
+				float: left;
+				width: 28%;
+				clear: left;
+			}
+			#logo-bg {
+				width: 77%;
+				clear: right;
+				display: block;
+				padding-left: 80px;
+				margin-left: 40px;
+			}
+			#container-right-bottom {
+				width: 65%;
+				margin-top: -172px;
+			}
+
+		}
+		@media (max-width: 399px) {
+			body {
+				background: #ccc;
+			}
+			#logo-bg {
+				display: none;
+			}
+			li {
+				display: inline-block;
+			}
+			#nav-styler {
+				float: right;
+				width: 18%;
+				clear: left;
+			}
+			#container-right-bottom {
+				width: 65%;
+				margin-top: 472px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="rag"></div>
+ 	<div id="container">
+ 		<div id="logo-bg">
+ 			<span id="logo-pos"><img src="images/logo.png" /></span>
+ 		</div>
+ 		 <div id="nav-styler">
+	 			<ul>
+	 				<li id="li-layout-one"><a href="#"><span class="smaller-text">The</span>Weblogue</a></li>
+	 				<li id="li-layout-two"><a href="#"><span class="smaller-text">Back</span>Issues</a></li>
+	 				<li id="li-layout-three"><a href="#"><span class="smaller-text">About</span>our paper</a></li>
+	 			</ul>
+ 		</div>
+ 		<div id="container-right-bottom">
+ 		 	<h1>"Give me problems. give me work."</h1>
+ 		 	<p>
+ 		 		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean at tellus eget eros tempor gravida nec et nunc. Donec ut urna eget velit cursus aliquam sed id sapien. Maecenas finibus, nibh id feugiat elementum, dui risus molestie nulla, nec feugiat mi quam ut dolor. Nulla fermentum, nulla non scelerisque aliquet, velit justo elementum purus, eget mattis velit urna vel quam. Donec tincidunt, ipsum eget commodo rutrum, nisl risus convallis eros, eu cursus elit libero vitae lorem. Integer hendrerit feugiat sem. Nunc lobortis nibh nec tortor faucibus volutpat. Nullam augue quam, fringilla at lacus semper, blandit fermentum eros.
+ 		 	</p>
+ 		 	<div id="head-styler">
+	 		 	<div id="head-text-align">
+	 		 		<span id="head-bg">victors &amp; villains</span>
+	 		 	</div>
+ 		 	</div>
+ 		 	<div>
+ 		 		<div class="image-tn">
+	 		 		<span class="image-resizer"><img src="images/f-holmes.jpg" /></span>
+	 		 		<p class="image-copy"><a href="#"><span class="smaller-text">Sherlock</span> Holmes</a></p>
+ 		 		</div>
+ 		 		<div class="image-tn">
+	 		 		<span class="image-resizer"><img src="images/f-watson.jpg" /></span>
+	 		 		<p class="image-copy"><a href="#"><span class="smaller-text">Sherlock</span> Holmes</a></p>
+ 		 		</div>
+ 		 		<div class="image-tn">
+	 		 		<span class="image-resizer"><img src="images/f-mycroft.jpg" /></span>
+	 		 		<p class="image-copy"><a href="#"><span class="smaller-text">Sherlock</span> Holmes</a></p>
+ 		 		</div>
+ 		 		<div class="image-tn">
+	 		 		<span class="image-resizer"><img src="images/f-moriarty.jpg" /></span>
+	 		 		<p class="image-copy"><a href="#"><span class="smaller-text">Sherlock</span> Holmes</a></p>
+ 		 		</div>
+ 		 		<div class="image-tn">
+	 		 		<span class="image-resizer"><img src="images/f-adler.jpg" /></span>
+	 		 		<p class="image-copy"><a href="#"><span class="smaller-text">Sherlock</span> Holmes</a></p>
+ 		 		</div>
+ 		 		<div class="image-tn">
+	 		 		<span class="image-resizer"><img src="images/f-winter.jpg" /></span>
+	 		 		<p class="image-copy"><a href="#"><span class="smaller-text">Sherlock</span> Holmes</a></p>
+ 		 		</div>
+ 		 	</div>
+ 		 	<div id="footer-copy">
+ 		 		<img src="images/ornament2.png" /><br>
+ 		 		Illustration by Nullam <a href="#">augue quam</a>, fringilla at lacus semper, <a href="#">blandit</a> fermentum eros.<br>
+ 		 		Feugiat mi <a href="#">quam ut dolor</a>.
+ 		 	</div>
+ 		</div>
+ 	</div>
+</body>
+</html>
