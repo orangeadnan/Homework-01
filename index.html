@@ -134,16 +134,18 @@
 			margin: 0 auto;
 		}
 
-		@media (min-width: 400px) and (max-width: 1299px) {
+		@media (min-width: 401px) and (max-width: 1299px) {
 			body {
-				background: #ccc;
+			}
+			#logo-pos {
+				margin-left: -20px;
 			}
 			li {
 				display: block;
 			}
 			#nav-styler {
 				float: left;
-				width: 28%;
+				width: 30%;
 				clear: left;
 			}
 			#logo-bg {
@@ -156,18 +158,23 @@
 			#container-right-bottom {
 				width: 65%;
 				margin-top: -172px;
+				background: url("images/bg.png") repeat;
+				padding-left: 10px;
+			}
+			.image-resizer {
+				zoom: 60%;
 			}
 
 		}
-		@media (max-width: 399px) {
+		@media (max-width: 400px) {
 			body {
-				background: #ccc;
 			}
 			#logo-bg {
 				display: none;
 			}
 			li {
 				display: inline-block;
+				margin-left: -270px;
 			}
 			#nav-styler {
 				float: right;
@@ -176,7 +183,10 @@
 			}
 			#container-right-bottom {
 				width: 65%;
-				margin-top: 472px;
+				margin-top: 272px;
+			}
+			.image-resizer {
+				 zoom: 20%;
 			}
 		}
 	</style>
